@@ -1,0 +1,6 @@
+2018-09-23 15:08:13 | Error | Oops! An error has occured. : Unknown attribute service_details from class UserRequest
+2018-09-23 15:22:08 | Error | Oops! An error has occured. : Unknown attribute service_details from class UserRequest
+2018-09-23 15:22:21 | Error | Oops! An error has occured. : Unknown attribute service_details from class UserRequest
+2018-09-23 15:53:16 | Error | Combodo\iTop\Portal\Form\ObjectFormManager::OnSubmit at line 995 : Rollback during submit (Object not following integrity rules: issues = Unexpected value for attribute 'title': Null not allowed, class = UserRequest, id = )
+2018-09-23 22:42:47 | Warning | Email sending failed: Some recipients were invalid, aFailedRecipients contains: my.email@foo.org
+2018-09-23 22:42:47 | Error | Failed to send the email with the NEW password for admin: Some recipients were invalid.

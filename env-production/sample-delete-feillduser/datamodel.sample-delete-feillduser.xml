@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+ 
+  <classes>
+     <class id="Ticket" _delta="must_exist">
+            <fields>
+                <!-- Allow name to be null -->
+                <field id="title" xsi:type="AttributeString" _delta="redefine">
+                    <sql>title</sql>
+                    <default_value/>
+                    <is_null_allowed>true</is_null_allowed>
+                      <on_target_delete>DEL_MANUAL</on_target_delete>
+                </field>
+            </fields>
+        </class>
+  </classes>
+  
+</itop_design>

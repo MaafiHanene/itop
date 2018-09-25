@@ -1,0 +1,1407 @@
+2018-09-22 18:38:32 - Info - CheckPHPVersion
+2018-09-22 18:38:32 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-22 18:38:32 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-22 18:38:32 - Info - upload_max_filesize: 2M
+2018-09-22 18:38:32 - Info - post_max_size: 8M
+2018-09-22 18:38:32 - Info - max_file_uploads: 20
+2018-09-22 18:38:32 - Info - memory_limit is 134217728, ok.
+2018-09-22 18:38:32 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-22 18:38:32 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-22 18:38:32 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-22 18:38:32 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-22 18:38:32 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-22 18:38:32 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-22 18:38:34 - Info - CheckBackupPrerequisites
+2018-09-22 18:38:34 - Info - PHP functions disabled: 
+2018-09-22 18:38:34 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-22 18:38:34 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-22 18:38:34 - Info - operation 'async_action', peak memory usage. 14786152
+2018-09-22 18:38:41 - Info - operation 'async_action', peak memory usage. 14785728
+2018-09-22 18:38:46 - Info - operation 'async_action', peak memory usage. 14786048
+2018-09-22 18:38:47 - Info - operation 'async_action', peak memory usage. 14789104
+2018-09-22 18:38:48 - Info - operation 'async_action', peak memory usage. 14786048
+2018-09-22 18:38:48 - Info - operation 'async_action', peak memory usage. 14789104
+2018-09-22 18:38:49 - Info - operation 'async_action', peak memory usage. 14765600
+2018-09-22 18:38:51 - Info - operation 'async_action', peak memory usage. 14765760
+2018-09-22 18:38:59 - Info - CheckGraphviz
+2018-09-22 18:38:59 - Info - PHP functions disabled: 
+2018-09-22 18:38:59 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-22 18:38:59 - Info - operation 'async_action', peak memory usage. 14760232
+2018-09-22 18:39:10 - Info - CheckGraphviz
+2018-09-22 18:39:10 - Info - PHP functions disabled: 
+2018-09-22 18:39:10 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-22 18:39:10 - Info - operation 'async_action', peak memory usage. 14760232
+2018-09-22 18:39:32 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>install</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file></previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user>admin</user>
+    <pwd>**removed**</pwd>
+    <language>EN US</language>
+  </admin_account>
+  <language>EN US</language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+  </selected_extensions>
+  <sample_data>1</sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-22 18:39:32 - Info - operation 'async_action', peak memory usage. 14792432
+2018-09-22 18:39:32 - Info - operation 'async_action', peak memory usage. 14771176
+2018-09-22 18:39:32 - Info - Compiling data model.
+2018-09-22 18:40:03 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-22 18:40:03 - Info - operation 'async_action', peak memory usage. 43698192
+2018-09-22 18:40:03 - Info - Update Database Schema for environment 'production'.
+2018-09-22 18:40:04 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 18:40:06 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:40:06 - Info - Creating the structure in ''.
+2018-09-22 18:40:07 - Info - 0.462s - query: CREATE TABLE `priv_async_task` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('error','idle','planned','running') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'planned', `created` DATETIME, INDEX `created` (`created`), `started` DATETIME, `planned` DATETIME, `event_id` INT(11) DEFAULT 0, INDEX `event_id` (`event_id`), `remaining_retries` INT(11) DEFAULT 0, `last_error_code` INT(11) DEFAULT 0, `last_error` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `last_attempt` DATETIME, `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'AsyncTask', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:07 - Info - 0.315s - query: CREATE TABLE `priv_async_send_email` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `version` INT(11) DEFAULT 1, `to` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `subject` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `message` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:08 - Info - 0.471s - query: CREATE TABLE `priv_db_properties` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `value` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `change_date` DATETIME, `change_comment` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:08 - Info - 0.398s - query: CREATE TABLE `priv_change` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `date` DATETIME, INDEX `date` (`date`), `userinfo` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `origin` ENUM('csv-import.php','csv-interactive','custom-extension','email-processing','interactive','synchro-data-source','webservice-rest','webservice-soap') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'interactive', INDEX `origin` (`origin`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:09 - Info - 0.373s - query: CREATE TABLE `priv_changeop` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `changeid` INT(11) DEFAULT 0, INDEX `changeid` (`changeid`), `objclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `objkey` INT(11) DEFAULT 0, `optype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'CMDBChangeOp', INDEX `optype` (`optype` (95)), INDEX `objclass_objkey` (`objclass` (95), `objkey`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:09 - Info - 0.461s - query: CREATE TABLE `priv_changeop_create` (`id` INT(11) NOT NULL  PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:09 - Info - 0.258s - query: CREATE TABLE `priv_changeop_delete` (`id` INT(11) NOT NULL  PRIMARY KEY, `fclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `fname` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:10 - Info - 0.261s - query: CREATE TABLE `priv_changeop_setatt` (`id` INT(11) NOT NULL  PRIMARY KEY, `attcode` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:10 - Info - 0.317s - query: CREATE TABLE `priv_changeop_setatt_scalar` (`id` INT(11) NOT NULL  PRIMARY KEY, `oldvalue` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `newvalue` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:11 - Info - 0.460s - query: CREATE TABLE `priv_changeop_setatt_url` (`id` INT(11) NOT NULL  PRIMARY KEY, `oldvalue` VARCHAR(2048) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `newvalue` VARCHAR(2048) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:11 - Info - 0.313s - query: CREATE TABLE `priv_changeop_setatt_data` (`id` INT(11) NOT NULL  PRIMARY KEY, `prevdata_data` LONGBLOB, `prevdata_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `prevdata_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:11 - Info - 0.334s - query: CREATE TABLE `priv_changeop_setatt_pwd` (`id` INT(11) NOT NULL  PRIMARY KEY, `prev_pwd_hash` TINYBLOB, `prev_pwd_salt` TINYBLOB) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:12 - Info - 0.398s - query: CREATE TABLE `priv_changeop_setatt_encrypted` (`id` INT(11) NOT NULL  PRIMARY KEY, `data` TINYBLOB) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:12 - Info - 0.295s - query: CREATE TABLE `priv_changeop_setatt_text` (`id` INT(11) NOT NULL  PRIMARY KEY, `prevdata` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:12 - Info - 0.268s - query: CREATE TABLE `priv_changeop_setatt_longtext` (`id` INT(11) NOT NULL  PRIMARY KEY, `prevdata` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:13 - Info - 0.291s - query: CREATE TABLE `priv_changeop_setatt_html` (`id` INT(11) NOT NULL  PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:13 - Info - 0.627s - query: CREATE TABLE `priv_changeop_setatt_log` (`id` INT(11) NOT NULL  PRIMARY KEY, `lastentry` INT(11) DEFAULT 0) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:14 - Info - 0.295s - query: CREATE TABLE `priv_changeop_plugin` (`id` INT(11) NOT NULL  PRIMARY KEY, `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:14 - Info - 0.283s - query: CREATE TABLE `priv_changeop_links` (`id` INT(11) NOT NULL  PRIMARY KEY, `item_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `item_id` INT(11) DEFAULT 0) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:14 - Info - 0.276s - query: CREATE TABLE `priv_changeop_links_addremove` (`id` INT(11) NOT NULL  PRIMARY KEY, `type` ENUM('added','removed') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'added') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:15 - Info - 0.418s - query: CREATE TABLE `priv_changeop_links_tune` (`id` INT(11) NOT NULL  PRIMARY KEY, `link_id` INT(11) DEFAULT 0) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:15 - Info - 0.264s - query: CREATE TABLE `priv_changeop_setatt_custfields` (`id` INT(11) NOT NULL  PRIMARY KEY, `prevdata` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:15 - Info - 0.428s - query: CREATE TABLE `priv_user` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `contactid` INT(11) DEFAULT 0, INDEX `contactid` (`contactid`), `login` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `login` (`login` (95)), `language` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'EN US', INDEX `language` (`language` (95)), `status` ENUM('disabled','enabled') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'enabled', `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'User', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:16 - Info - 0.395s - query: CREATE TABLE `priv_internaluser` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `reset_pwd_token_hash` TINYBLOB, `reset_pwd_token_salt` TINYBLOB) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:16 - Info - 0.373s - query: CREATE TABLE `priv_module_install` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `version` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `installed` DATETIME, `comment` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `parent_id` INT(11) DEFAULT 0, INDEX `parent_id` (`parent_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:17 - Info - 0.349s - query: CREATE TABLE `priv_extension_install` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `code` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `label` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `version` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `source` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `installed` DATETIME) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:17 - Info - 0.272s - query: CREATE TABLE `priv_app_dashboards` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` INT(11) DEFAULT 0, INDEX `user_id` (`user_id`), `menu_code` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `contents` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:17 - Info - 0.513s - query: CREATE TABLE `priv_shortcut` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` INT(11) DEFAULT 0, INDEX `user_id` (`user_id`), `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `context` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Shortcut', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:18 - Info - 0.272s - query: CREATE TABLE `priv_shortcut_oql` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `oql` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `auto_reload` ENUM('custom','none') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'none', `auto_reload_sec` INT(11) DEFAULT 60) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:18 - Info - 0.337s - query: CREATE TABLE `priv_app_preferences` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `userid` INT(11) DEFAULT 0, INDEX `userid` (`userid`), `preferences` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:19 - Info - 1.049s - query: CREATE TABLE `priv_auditrule` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `query` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `valid_flag` ENUM('false','true') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'true', `category_id` INT(11) DEFAULT 0, INDEX `category_id` (`category_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:20 - Info - 0.284s - query: CREATE TABLE `priv_auditcategory` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `definition_set` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:20 - Info - 0.435s - query: CREATE TABLE `priv_query` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `fields` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Query', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:20 - Info - 0.319s - query: CREATE TABLE `priv_query_oql` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `oql` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:21 - Info - 0.383s - query: CREATE TABLE `priv_event` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `message` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `date` DATETIME, `userinfo` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Event', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:21 - Info - 0.455s - query: CREATE TABLE `priv_event_notification` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `trigger_id` INT(11) DEFAULT 0, INDEX `trigger_id` (`trigger_id`), `action_id` INT(11) DEFAULT 0, INDEX `action_id` (`action_id`), `object_id` INT(11) DEFAULT 0, INDEX `object_id` (`object_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:22 - Info - 0.350s - query: CREATE TABLE `priv_event_email` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `to` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `cc` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `bcc` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `from` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `subject` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `body` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `attachments` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:22 - Info - 0.254s - query: CREATE TABLE `priv_event_issue` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `issue` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `impact` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `page` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `arguments_post` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `arguments_get` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `callstack` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `data` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:22 - Info - 0.294s - query: CREATE TABLE `priv_event_webservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `verb` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `result` TINYINT(1) DEFAULT 0, `log_info` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `log_warning` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `log_error` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `data` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:23 - Info - 0.305s - query: CREATE TABLE `priv_event_restservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `operation` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `version` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `json_input` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `code` INT(11) DEFAULT 0, `json_output` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `provider` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:23 - Info - 0.273s - query: CREATE TABLE `priv_event_loginusage` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` INT(11) DEFAULT 0, INDEX `user_id` (`user_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:23 - Info - 0.306s - query: CREATE TABLE `priv_event_onobject` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `obj_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `obj_key` INT(11)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:24 - Info - 0.307s - query: CREATE TABLE `priv_action` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `status` ENUM('test','enabled','disabled') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'test', `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Action', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:24 - Info - 0.268s - query: CREATE TABLE `priv_action_notification` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:24 - Info - 0.338s - query: CREATE TABLE `priv_action_email` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `test_recipient` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `from` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `reply_to` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `to` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `cc` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `bcc` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `subject` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `body` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `importance` ENUM('high','low','normal') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'normal') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:24 - Info - 0.279s - query: CREATE TABLE `priv_trigger` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `description` (`description` (95)), `realclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Trigger', INDEX `realclass` (`realclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:25 - Info - 0.299s - query: CREATE TABLE `priv_trigger_onobject` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `target_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'ApplicationSolution', INDEX `target_class` (`target_class` (95)), `filter` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:25 - Info - 0.283s - query: CREATE TABLE `priv_trigger_onportalupdate` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:26 - Info - 0.360s - query: CREATE TABLE `priv_trigger_onstatechange` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `state` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:26 - Info - 0.667s - query: CREATE TABLE `priv_trigger_onstateenter` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:27 - Info - 0.263s - query: CREATE TABLE `priv_trigger_onstateleave` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:27 - Info - 0.294s - query: CREATE TABLE `priv_trigger_onobjcreate` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:27 - Info - 0.328s - query: CREATE TABLE `priv_link_action_trigger` (`link_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `action_id` INT(11) DEFAULT 0, INDEX `action_id` (`action_id`), `trigger_id` INT(11) DEFAULT 0, INDEX `trigger_id` (`trigger_id`), `order` INT(11) DEFAULT 0) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:28 - Info - 0.350s - query: CREATE TABLE `priv_trigger_threshold` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `stop_watch_code` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `threshold_index` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:28 - Info - 0.344s - query: CREATE TABLE `priv_bulk_export_result` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `created` DATETIME, INDEX `created` (`created`), `user_id` INT(11) DEFAULT 0, `chunk_size` INT(11) DEFAULT 0, `format` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `temp_file_path` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `search` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `status_info` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `localize_output` TINYINT(1) DEFAULT 1) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:28 - Info - 0.397s - query: CREATE TABLE `priv_ownership_token` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `acquired` DATETIME, `last_seen` DATETIME, `obj_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `obj_class` (`obj_class` (95)), `obj_key` INT(11), INDEX `obj_key` (`obj_key`), `token` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `user_id` INT(11) DEFAULT 0, INDEX `user_id` (`user_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:29 - Info - 0.404s - query: CREATE TABLE `priv_sync_datasource` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `status` ENUM('implementation','obsolete','production') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'implementation', `user_id` INT(11) DEFAULT 0, INDEX `user_id` (`user_id`), `notify_contact_id` INT(11) DEFAULT 0, INDEX `notify_contact_id` (`notify_contact_id`), `scope_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'lnkTriggerAction', INDEX `scope_class` (`scope_class` (95)), `database_table_name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `scope_restriction` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `full_load_periodicity` INT(11) UNSIGNED, `reconciliation_policy` ENUM('use_attributes','use_primary_key') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'use_attributes', `action_on_zero` ENUM('create','error') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'create', `action_on_one` ENUM('error','update') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'update', `action_on_multiple` ENUM('create','error','take_first') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'error', `delete_policy` ENUM('delete','ignore','update','update_then_delete') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'ignore', `delete_policy_update` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `delete_policy_retention` INT(11) UNSIGNED, `user_delete_policy` ENUM('administrators','everybody','nobody') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'nobody', `url_icon` VARCHAR(2048) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `url_application` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:29 - Info - 0.404s - query: CREATE TABLE `priv_sync_att` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `sync_source_id` INT(11) DEFAULT 0, INDEX `sync_source_id` (`sync_source_id`), `attcode` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `attcode` (`attcode` (95)), `update` TINYINT(1) DEFAULT 1, `reconcile` TINYINT(1) DEFAULT 0, `update_policy` ENUM('master_locked','master_unlocked','write_if_empty') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'master_locked', `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'SynchroAttribute', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:30 - Info - 0.326s - query: CREATE TABLE `priv_sync_att_extkey` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `reconciliation_attcode` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:30 - Info - 0.278s - query: CREATE TABLE `priv_sync_att_linkset` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `row_separator` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '|', `attribute_separator` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT ';', `value_separator` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT ':', `attribute_qualifier` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '\'') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:30 - Info - 0.337s - query: CREATE TABLE `priv_sync_log` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `sync_source_id` INT(11) DEFAULT 0, INDEX `sync_source_id` (`sync_source_id`), `start_date` DATETIME, `end_date` DATETIME, `status` ENUM('completed','error','running') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'running', `status_curr_job` INT(11) DEFAULT 0, `status_curr_pos` INT(11) DEFAULT 0, `stats_nb_replica_seen` INT(11) DEFAULT 0, `stats_nb_replica_total` INT(11) DEFAULT 0, `stats_nb_obj_deleted` INT(11) DEFAULT 0, `stats_deleted_errors` INT(11) DEFAULT 0, `stats_nb_obj_obsoleted` INT(11) DEFAULT 0, `stats_nb_obj_obsoleted_errors` INT(11) DEFAULT 0, `stats_nb_obj_created` INT(11) DEFAULT 0, `stats_nb_obj_created_errors` INT(11) DEFAULT 0, `stats_nb_obj_created_warnings` INT(11) DEFAULT 0, `stats_nb_obj_updated` INT(11) DEFAULT 0, `stats_nb_obj_updated_errors` INT(11) DEFAULT 0, `stats_nb_obj_updated_warnings` INT(11) DEFAULT 0, `stats_nb_obj_unchanged_warnings` INT(11) DEFAULT 0, `stats_nb_replica_reconciled_errors` INT(11) DEFAULT 0, `stats_nb_replica_disappeared_no_action` INT(11) DEFAULT 0, `stats_nb_obj_new_updated` INT(11) DEFAULT 0, `stats_nb_obj_new_updated_warnings` INT(11) DEFAULT 0, `stats_nb_obj_new_unchanged` INT(11) DEFAULT 0, `stats_nb_obj_new_unchanged_warnings` INT(11) DEFAULT 0, `last_error` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `traces` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `memory_usage_peak` INT(11) DEFAULT 0) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:31 - Info - 1.140s - query: CREATE TABLE `priv_sync_replica` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `sync_source_id` INT(11) DEFAULT 0, INDEX `sync_source_id` (`sync_source_id`), `dest_id` INT(11) DEFAULT 0, `dest_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Organization', INDEX `dest_class` (`dest_class` (95)), `status_last_seen` DATETIME, `status` ENUM('modified','new','obsolete','orphan','synchronized') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'new', `status_dest_creator` TINYINT(1) DEFAULT 0, `status_last_error` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `status_last_warning` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `info_creation_date` DATETIME, `info_last_modified` DATETIME, INDEX `dest_class_dest_id` (`dest_class` (95), `dest_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:32 - Info - 0.414s - query: CREATE TABLE `priv_backgroundtask` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `class_name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `class_name` (`class_name` (95)), `first_run_date` DATETIME, `latest_run_date` DATETIME, `next_run_date` DATETIME, `total_exec_count` INT(11) DEFAULT 0, `latest_run_duration` DECIMAL(8,3) DEFAULT 0, `min_run_duration` DECIMAL(8,3) DEFAULT 0, `max_run_duration` DECIMAL(8,3) DEFAULT 0, `average_run_duration` DECIMAL(8,3) DEFAULT 0, `running` TINYINT(1) DEFAULT 0, `status` ENUM('active','paused') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:32 - Info - 0.471s - query: CREATE TABLE `inline_image` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `expire` DATETIME, `temp_id` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `temp_id` (`temp_id` (95)), `item_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `item_class` (`item_class` (95)), `item_id` INT(11) DEFAULT 0, `item_org_id` INT(11) DEFAULT 0, `contents_data` LONGBLOB, `contents_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `contents_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `secret` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `item_class_item_id` (`item_class` (95), `item_id`), INDEX `item_org_id` (`item_org_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:33 - Info - 0.339s - query: CREATE TABLE `priv_user_local` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `password_hash` TINYBLOB, `password_salt` TINYBLOB) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:33 - Info - 0.409s - query: CREATE TABLE `attachment` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `expire` DATETIME, `temp_id` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `temp_id` (`temp_id` (95)), `item_class` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `item_class` (`item_class` (95)), `item_id` INT(11) DEFAULT 0, `item_org_id` INT(11) DEFAULT 0, `contents_data` LONGBLOB, `contents_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `contents_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, INDEX `item_class_item_id` (`item_class` (95), `item_id`), INDEX `item_org_id` (`item_org_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:34 - Info - 0.481s - query: CREATE TABLE `priv_changeop_attachment_added` (`id` INT(11) NOT NULL  PRIMARY KEY, `attachment_id` INT(11) DEFAULT 0, INDEX `attachment_id` (`attachment_id`), `filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:34 - Info - 0.251s - query: CREATE TABLE `priv_changeop_attachment_removed` (`id` INT(11) NOT NULL  PRIMARY KEY, `filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:34 - Info - 0.459s - query: CREATE TABLE `organization` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `code` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active', `parent_id` INT(11) DEFAULT 0, INDEX `parent_id` (`parent_id`), `parent_id_left` INT(11) DEFAULT 0, INDEX `parent_id_left` (`parent_id_left`), `parent_id_right` INT(11) DEFAULT 0, INDEX `parent_id_right` (`parent_id_right`), `deliverymodel_id` INT(11) DEFAULT 0, INDEX `deliverymodel_id` (`deliverymodel_id`), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:35 - Info - 0.394s - query: CREATE TABLE `location` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active', `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `address` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `postal_code` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `city` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `country` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:35 - Info - 0.399s - query: CREATE TABLE `contact` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active', `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `email` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `phone` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `notify` ENUM('no','yes') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'yes', `function` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Contact', INDEX `finalclass` (`finalclass` (95)), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:36 - Info - 0.880s - query: CREATE TABLE `person` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `picture_data` LONGBLOB, `picture_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `picture_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `first_name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `first_name` (`first_name` (95)), `employee_number` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `mobile_phone` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `location_id` INT(11) DEFAULT 0, INDEX `location_id` (`location_id`), `manager_id` INT(11) DEFAULT 0, INDEX `manager_id` (`manager_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:37 - Info - 0.341s - query: CREATE TABLE `team` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:37 - Info - 0.381s - query: CREATE TABLE `document` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `documenttype_id` INT(11) DEFAULT 0, INDEX `documenttype_id` (`documenttype_id`), `version` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `status` ENUM('draft','obsolete','published') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Document', INDEX `finalclass` (`finalclass` (95)), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:37 - Info - 0.307s - query: CREATE TABLE `documentfile` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `file_data` LONGBLOB, `file_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `file_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:38 - Info - 0.347s - query: CREATE TABLE `documentnote` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `text` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:38 - Info - 0.272s - query: CREATE TABLE `documentweb` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `url` VARCHAR(2048) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:38 - Info - 0.381s - query: CREATE TABLE `functionalci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `business_criticity` ENUM('high','low','medium') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'low', `move2production` DATE, `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'FunctionalCI', INDEX `finalclass` (`finalclass` (95)), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:39 - Info - 0.413s - query: CREATE TABLE `physicaldevice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `serialnumber` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `location_id` INT(11) DEFAULT 0, INDEX `location_id` (`location_id`), `status` ENUM('implementation','obsolete','production','stock') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'production', `brand_id` INT(11) DEFAULT 0, INDEX `brand_id` (`brand_id`), `model_id` INT(11) DEFAULT 0, INDEX `model_id` (`model_id`), `asset_number` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `purchase_date` DATE, `end_of_warranty` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:39 - Info - 0.268s - query: CREATE TABLE `connectableci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:40 - Info - 0.363s - query: CREATE TABLE `datacenterdevice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `rack_id` INT(11) DEFAULT 0, INDEX `rack_id` (`rack_id`), `enclosure_id` INT(11) DEFAULT 0, INDEX `enclosure_id` (`enclosure_id`), `nb_u` INT(11), `managementip` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `powera_id` INT(11) DEFAULT 0, INDEX `powera_id` (`powera_id`), `powerB_id` INT(11) DEFAULT 0, INDEX `powerB_id` (`powerB_id`), `redundancy` VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 1) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:40 - Info - 0.393s - query: CREATE TABLE `networkdevice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `networkdevicetype_id` INT(11) DEFAULT 0, INDEX `networkdevicetype_id` (`networkdevicetype_id`), `iosversion_id` INT(11) DEFAULT 0, INDEX `iosversion_id` (`iosversion_id`), `ram` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:40 - Info - 0.490s - query: CREATE TABLE `server` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `osfamily_id` INT(11) DEFAULT 0, INDEX `osfamily_id` (`osfamily_id`), `osversion_id` INT(11) DEFAULT 0, INDEX `osversion_id` (`osversion_id`), `oslicence_id` INT(11) DEFAULT 0, INDEX `oslicence_id` (`oslicence_id`), `cpu` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `ram` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:41 - Info - 0.317s - query: CREATE TABLE `applicationsolution` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active', `redundancy` VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'disabled') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:41 - Info - 0.331s - query: CREATE TABLE `businessprocess` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'active') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:42 - Info - 0.394s - query: CREATE TABLE `softwareinstance` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`), `software_id` INT(11) DEFAULT 0, INDEX `software_id` (`software_id`), `softwarelicence_id` INT(11) DEFAULT 0, INDEX `softwarelicence_id` (`softwarelicence_id`), `path` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `status` ENUM('active','inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:42 - Info - 0.344s - query: CREATE TABLE `middleware` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:42 - Info - 0.280s - query: CREATE TABLE `dbserver` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:43 - Info - 0.304s - query: CREATE TABLE `webserver` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:44 - Info - 0.877s - query: CREATE TABLE `pcsoftware` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:44 - Info - 0.341s - query: CREATE TABLE `othersoftware` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:44 - Info - 0.434s - query: CREATE TABLE `middlewareinstance` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `middleware_id` INT(11) DEFAULT 0, INDEX `middleware_id` (`middleware_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:45 - Info - 0.345s - query: CREATE TABLE `databaseschema` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `dbserver_id` INT(11) DEFAULT 0, INDEX `dbserver_id` (`dbserver_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:45 - Info - 0.344s - query: CREATE TABLE `webapplication` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `webserver_id` INT(11) DEFAULT 0, INDEX `webserver_id` (`webserver_id`), `url` VARCHAR(2048) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:45 - Info - 0.369s - query: CREATE TABLE `software` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `vendor` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `version` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `version` (`version` (95)), `type` ENUM('DBServer','Middleware','OtherSoftware','PCSoftware','WebServer') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:46 - Info - 0.330s - query: CREATE TABLE `patch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Patch', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:46 - Info - 0.335s - query: CREATE TABLE `ospatch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `osversion_id` INT(11) DEFAULT 0, INDEX `osversion_id` (`osversion_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:47 - Info - 0.339s - query: CREATE TABLE `softwarepatch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `software_id` INT(11) DEFAULT 0, INDEX `software_id` (`software_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:47 - Info - 0.397s - query: CREATE TABLE `licence` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `usage_limit` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `start_date` DATE, `end_date` DATE, `licence_key` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `perpetual` ENUM('no','yes') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'no', `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Licence', INDEX `finalclass` (`finalclass` (95)), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:47 - Info - 0.367s - query: CREATE TABLE `oslicence` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `osversion_id` INT(11) DEFAULT 0, INDEX `osversion_id` (`osversion_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:48 - Info - 0.519s - query: CREATE TABLE `softwarelicence` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `software_id` INT(11) DEFAULT 0, INDEX `software_id` (`software_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:49 - Info - 0.851s - query: CREATE TABLE `lnkdocumenttolicence` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `licence_id` INT(11) DEFAULT 0, INDEX `licence_id` (`licence_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:49 - Info - 0.363s - query: CREATE TABLE `typology` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Typology', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:50 - Info - 0.283s - query: CREATE TABLE `osversion` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `osfamily_id` INT(11) DEFAULT 0, INDEX `osfamily_id` (`osfamily_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:50 - Info - 0.367s - query: CREATE TABLE `osfamily` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:50 - Info - 0.303s - query: CREATE TABLE `documenttype` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:51 - Info - 0.316s - query: CREATE TABLE `contacttype` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:51 - Info - 0.321s - query: CREATE TABLE `brand` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:51 - Info - 0.346s - query: CREATE TABLE `model` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `brand_id` INT(11) DEFAULT 0, INDEX `brand_id` (`brand_id`), `type` ENUM('DiskArray','Enclosure','IPPhone','MobilePhone','NAS','NetworkDevice','PC','PDU','Peripheral','Phone','PowerSource','Printer','Rack','SANSwitch','Server','StorageSystem','Tablet','TapeLibrary') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:52 - Info - 0.283s - query: CREATE TABLE `networkdevicetype` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:52 - Info - 0.311s - query: CREATE TABLE `iosversion` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `brand_id` INT(11) DEFAULT 0, INDEX `brand_id` (`brand_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:52 - Info - 0.383s - query: CREATE TABLE `lnkdocumenttopatch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `patch_id` INT(11) DEFAULT 0, INDEX `patch_id` (`patch_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:53 - Info - 0.360s - query: CREATE TABLE `lnksoftwareinstancetosoftwarepatch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `softwarepatch_id` INT(11) DEFAULT 0, INDEX `softwarepatch_id` (`softwarepatch_id`), `softwareinstance_id` INT(11) DEFAULT 0, INDEX `softwareinstance_id` (`softwareinstance_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:53 - Info - 0.305s - query: CREATE TABLE `lnkfunctionalcitoospatch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `ospatch_id` INT(11) DEFAULT 0, INDEX `ospatch_id` (`ospatch_id`), `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:53 - Info - 0.295s - query: CREATE TABLE `lnkdocumenttosoftware` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `software_id` INT(11) DEFAULT 0, INDEX `software_id` (`software_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:54 - Info - 0.502s - query: CREATE TABLE `lnkcontacttofunctionalci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`), `contact_id` INT(11) DEFAULT 0, INDEX `contact_id` (`contact_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:55 - Info - 0.640s - query: CREATE TABLE `lnkdocumenttofunctionalci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:55 - Info - 0.451s - query: CREATE TABLE `subnet` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `subnet_name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `ip` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `ip` (`ip` (95)), `ip_mask` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `ip_mask` (`ip_mask` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:56 - Info - 0.420s - query: CREATE TABLE `vlan` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `vlan_tag` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `vlan_tag` (`vlan_tag` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:56 - Info - 0.527s - query: CREATE TABLE `lnksubnettovlan` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `subnet_id` INT(11) DEFAULT 0, INDEX `subnet_id` (`subnet_id`), `vlan_id` INT(11) DEFAULT 0, INDEX `vlan_id` (`vlan_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:56 - Info - 0.339s - query: CREATE TABLE `networkinterface` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'NetworkInterface', INDEX `finalclass` (`finalclass` (95)), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:57 - Info - 0.401s - query: CREATE TABLE `ipinterface` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `ipaddress` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `macaddress` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `comment` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `ipgateway` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `ipmask` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `speed` DECIMAL(12,2)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:57 - Info - 0.310s - query: CREATE TABLE `physicalinterface` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `connectableci_id` INT(11) DEFAULT 0, INDEX `connectableci_id` (`connectableci_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:58 - Info - 0.351s - query: CREATE TABLE `lnkphysicalinterfacetovlan` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `physicalinterface_id` INT(11) DEFAULT 0, INDEX `physicalinterface_id` (`physicalinterface_id`), `vlan_id` INT(11) DEFAULT 0, INDEX `vlan_id` (`vlan_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:58 - Info - 0.503s - query: CREATE TABLE `lnkconnectablecitonetworkdevice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `networkdevice_id` INT(11) DEFAULT 0, INDEX `networkdevice_id` (`networkdevice_id`), `connectableci_id` INT(11) DEFAULT 0, INDEX `connectableci_id` (`connectableci_id`), `network_port` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `device_port` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `type` ENUM('downlink','uplink') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'downlink') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:59 - Info - 0.324s - query: CREATE TABLE `lnkapplicationsolutiontofunctionalci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `applicationsolution_id` INT(11) DEFAULT 0, INDEX `applicationsolution_id` (`applicationsolution_id`), `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:59 - Info - 0.456s - query: CREATE TABLE `lnkapplicationsolutiontobusinessprocess` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `businessprocess_id` INT(11) DEFAULT 0, INDEX `businessprocess_id` (`businessprocess_id`), `applicationsolution_id` INT(11) DEFAULT 0, INDEX `applicationsolution_id` (`applicationsolution_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:40:59 - Info - 0.391s - query: CREATE TABLE `lnkpersontoteam` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `team_id` INT(11) DEFAULT 0, INDEX `team_id` (`team_id`), `person_id` INT(11) DEFAULT 0, INDEX `person_id` (`person_id`), `role_id` INT(11) DEFAULT 0, INDEX `role_id` (`role_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:00 - Info - 0.792s - query: CREATE TABLE `group` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `status` ENUM('implementation','obsolete','production') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'implementation', `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `type` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `parent_id` INT(11) DEFAULT 0, INDEX `parent_id` (`parent_id`), `parent_id_left` INT(11) DEFAULT 0, INDEX `parent_id_left` (`parent_id_left`), `parent_id_right` INT(11) DEFAULT 0, INDEX `parent_id_right` (`parent_id_right`), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:01 - Info - 0.384s - query: CREATE TABLE `lnkgrouptoci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `group_id` INT(11) DEFAULT 0, INDEX `group_id` (`group_id`), `ci_id` INT(11) DEFAULT 0, INDEX `ci_id` (`ci_id`), `reason` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:01 - Info - 0.340s - query: CREATE TABLE `rack` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `nb_u` INT(11)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:01 - Info - 0.340s - query: CREATE TABLE `enclosure` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `rack_id` INT(11) DEFAULT 0, INDEX `rack_id` (`rack_id`), `nb_u` INT(11)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:02 - Info - 0.318s - query: CREATE TABLE `powerconnection` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:03 - Info - 1.140s - query: CREATE TABLE `powersource` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:03 - Info - 0.312s - query: CREATE TABLE `pdu` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `rack_id` INT(11) DEFAULT 0, INDEX `rack_id` (`rack_id`), `powerstart_id` INT(11) DEFAULT 0, INDEX `powerstart_id` (`powerstart_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:04 - Info - 0.363s - query: CREATE TABLE `pc` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `osfamily_id` INT(11) DEFAULT 0, INDEX `osfamily_id` (`osfamily_id`), `osversion_id` INT(11) DEFAULT 0, INDEX `osversion_id` (`osversion_id`), `cpu` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `ram` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `type` ENUM('desktop','laptop') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:04 - Info - 0.337s - query: CREATE TABLE `printer` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:04 - Info - 0.315s - query: CREATE TABLE `telephonyci` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `phonenumber` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:05 - Info - 0.400s - query: CREATE TABLE `phone` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:05 - Info - 0.312s - query: CREATE TABLE `mobilephone` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `imei` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `hw_pin` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:05 - Info - 0.292s - query: CREATE TABLE `ipphone` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:06 - Info - 0.302s - query: CREATE TABLE `tablet` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:06 - Info - 0.353s - query: CREATE TABLE `peripheral` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:06 - Info - 0.259s - query: CREATE TABLE `storagesystem` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:07 - Info - 0.331s - query: CREATE TABLE `sanswitch` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:07 - Info - 0.392s - query: CREATE TABLE `tapelibrary` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:08 - Info - 0.302s - query: CREATE TABLE `nas` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:08 - Info - 0.443s - query: CREATE TABLE `fiberchannelinterface` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `speed` DECIMAL(6,2), `topology` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `wwn` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `datacenterdevice_id` INT(11) DEFAULT 0, INDEX `datacenterdevice_id` (`datacenterdevice_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:08 - Info - 0.365s - query: CREATE TABLE `tape` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `size` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `tapelibrary_id` INT(11) DEFAULT 0, INDEX `tapelibrary_id` (`tapelibrary_id`), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:09 - Info - 0.470s - query: CREATE TABLE `nasfilesystem` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `raid_level` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `size` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `nas_id` INT(11) DEFAULT 0, INDEX `nas_id` (`nas_id`), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:10 - Info - 1.213s - query: CREATE TABLE `logicalvolume` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `lun_id` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `raid_level` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `size` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `storagesystem_id` INT(11) DEFAULT 0, INDEX `storagesystem_id` (`storagesystem_id`), `obsolescence_date` DATE) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:10 - Info - 0.337s - query: CREATE TABLE `lnkservertovolume` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `volume_id` INT(11) DEFAULT 0, INDEX `volume_id` (`volume_id`), `server_id` INT(11) DEFAULT 0, INDEX `server_id` (`server_id`), `size_used` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:11 - Info - 0.451s - query: CREATE TABLE `lnkdatacenterdevicetosan` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `san_id` INT(11) DEFAULT 0, INDEX `san_id` (`san_id`), `datacenterdevice_id` INT(11) DEFAULT 0, INDEX `datacenterdevice_id` (`datacenterdevice_id`), `san_port` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `datacenterdevice_port` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:12 - Info - 0.596s - query: CREATE TABLE `ticket` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `operational_status` ENUM('closed','ongoing','resolved') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'ongoing', INDEX `operational_status` (`operational_status`), `ref` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `ref` (`ref` (95)), `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `caller_id` INT(11) DEFAULT 0, INDEX `caller_id` (`caller_id`), `team_id` INT(11) DEFAULT 0, INDEX `team_id` (`team_id`), `agent_id` INT(11) DEFAULT 0, INDEX `agent_id` (`agent_id`), `title` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `description_format` ENUM('text','html') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'text', `start_date` DATETIME, `end_date` DATETIME, `last_update` DATETIME, `close_date` DATETIME, `private_log` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `private_log_index` BLOB, `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Ticket', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:12 - Info - 0.394s - query: CREATE TABLE `lnkcontacttoticket` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `ticket_id` INT(11) DEFAULT 0, INDEX `ticket_id` (`ticket_id`), `contact_id` INT(11) DEFAULT 0, INDEX `contact_id` (`contact_id`), `role` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `impact_code` ENUM('computed','do_not_notify','manual') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'manual') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:12 - Info - 0.355s - query: CREATE TABLE `lnkfunctionalcitoticket` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `ticket_id` INT(11) DEFAULT 0, INDEX `ticket_id` (`ticket_id`), `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`), `impact` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `impact_code` ENUM('computed','manual','not_impacted') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'manual') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:13 - Info - 0.430s - query: CREATE TABLE `workorder` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `status` ENUM('closed','open') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'open', `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `ticket_id` INT(11) DEFAULT 0, INDEX `ticket_id` (`ticket_id`), `team_id` INT(11) DEFAULT 0, INDEX `team_id` (`team_id`), `owner_id` INT(11) DEFAULT 0, INDEX `owner_id` (`owner_id`), `start_date` DATETIME, `end_date` DATETIME, `log` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `log_index` BLOB) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:13 - Info - 0.326s - query: CREATE TABLE `virtualdevice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('implementation','obsolete','production','stock') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'production') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:14 - Info - 0.284s - query: CREATE TABLE `virtualhost` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:14 - Info - 0.383s - query: CREATE TABLE `hypervisor` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `farm_id` INT(11) DEFAULT 0, INDEX `farm_id` (`farm_id`), `server_id` INT(11) DEFAULT 0, INDEX `server_id` (`server_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:14 - Info - 0.370s - query: CREATE TABLE `farm` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `redundancy` VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 1) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:15 - Info - 0.372s - query: CREATE TABLE `virtualmachine` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `virtualhost_id` INT(11) DEFAULT 0, INDEX `virtualhost_id` (`virtualhost_id`), `osfamily_id` INT(11) DEFAULT 0, INDEX `osfamily_id` (`osfamily_id`), `osversion_id` INT(11) DEFAULT 0, INDEX `osversion_id` (`osversion_id`), `oslicence_id` INT(11) DEFAULT 0, INDEX `oslicence_id` (`oslicence_id`), `cpu` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `ram` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `managementip` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:15 - Info - 0.506s - query: CREATE TABLE `logicalinterface` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `virtualmachine_id` INT(11) DEFAULT 0, INDEX `virtualmachine_id` (`virtualmachine_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:16 - Info - 0.384s - query: CREATE TABLE `lnkvirtualdevicetovolume` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `volume_id` INT(11) DEFAULT 0, INDEX `volume_id` (`volume_id`), `virtualdevice_id` INT(11) DEFAULT 0, INDEX `virtualdevice_id` (`virtualdevice_id`), `size_used` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:16 - Info - 0.592s - query: CREATE TABLE `ticket_change` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('approved','assigned','closed','new','planned','rejected') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'new', `category` ENUM('application','hardware','network','other','software','system') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'hardware', `reject_reason` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `changemanager_id` INT(11) DEFAULT 0, INDEX `changemanager_id` (`changemanager_id`), `parent_id` INT(11) DEFAULT 0, INDEX `parent_id` (`parent_id`), `creation_date` DATETIME, `approval_date` DATETIME, `fallback_plan` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `outage` ENUM('no','yes') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'no') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:17 - Info - 0.893s - query: CREATE TABLE `ticket_request` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `status` ENUM('approved','assigned','closed','escalated_tto','escalated_ttr','new','pending','rejected','resolved','waiting_for_approval') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'new', `request_type` ENUM('incident','service_request') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `impact` ENUM('1','2','3') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '1', `priority` ENUM('1','2','3','4') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '4', `urgency` ENUM('1','2','3','4') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '4', `origin` ENUM('mail','monitoring','phone','portal') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'phone', `approver_id` INT(11) DEFAULT 0, INDEX `approver_id` (`approver_id`), `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `servicesubcategory_id` INT(11) DEFAULT 0, INDEX `servicesubcategory_id` (`servicesubcategory_id`), `escalation_flag` ENUM('no','yes') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'no', `escalation_reason` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `assignment_date` DATETIME, `resolution_date` DATETIME, `last_pending_date` DATETIME, `cumulatedpending_timespent` INT(11) UNSIGNED, `cumulatedpending_started` DATETIME, `cumulatedpending_laststart` DATETIME, `cumulatedpending_stopped` DATETIME, `tto_timespent` INT(11) UNSIGNED, `tto_started` DATETIME, `tto_laststart` DATETIME, `tto_stopped` DATETIME, `tto_75_deadline` DATETIME, `tto_75_passed` TINYINT(1) UNSIGNED, `tto_75_triggered` TINYINT(1), `tto_75_overrun` INT(11) UNSIGNED, `tto_100_deadline` DATETIME, `tto_100_passed` TINYINT(1) UNSIGNED, `tto_100_triggered` TINYINT(1), `tto_100_overrun` INT(11) UNSIGNED, `ttr_timespent` INT(11) UNSIGNED, `ttr_started` DATETIME, `ttr_laststart` DATETIME, `ttr_stopped` DATETIME, `ttr_75_deadline` DATETIME, `ttr_75_passed` TINYINT(1) UNSIGNED, `ttr_75_triggered` TINYINT(1), `ttr_75_overrun` INT(11) UNSIGNED, `ttr_100_deadline` DATETIME, `ttr_100_passed` TINYINT(1) UNSIGNED, `ttr_100_triggered` TINYINT(1), `ttr_100_overrun` INT(11) UNSIGNED, `time_spent` INT(11) UNSIGNED, `resolution_code` ENUM('assistance','bug fixed','hardware repair','other','software patch','system update','training') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'assistance', `solution` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `pending_reason` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `parent_request_id` INT(11) DEFAULT 0, INDEX `parent_request_id` (`parent_request_id`), `parent_change_id` INT(11) DEFAULT 0, INDEX `parent_change_id` (`parent_change_id`), `public_log` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `public_log_index` BLOB, `user_satisfaction` ENUM('1','2','3','4') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '1', `user_commment` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:18 - Info - 0.273s - query: CREATE TABLE `contracttype` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:18 - Info - 0.505s - query: CREATE TABLE `contract` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `start_date` DATE, `end_date` DATE, `cost` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `cost_currency` ENUM('dollars','euros') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `contracttype_id` INT(11) DEFAULT 0, INDEX `contracttype_id` (`contracttype_id`), `billing_frequency` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `cost_unit` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `provider_id` INT(11) DEFAULT 0, INDEX `provider_id` (`provider_id`), `status` ENUM('implementation','obsolete','production') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `finalclass` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'Contract', INDEX `finalclass` (`finalclass` (95))) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:18 - Info - 0.273s - query: CREATE TABLE `customercontract` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:19 - Info - 0.295s - query: CREATE TABLE `providercontract` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `sla` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', `coverage` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:19 - Info - 0.394s - query: CREATE TABLE `lnkcontacttocontract` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `contract_id` INT(11) DEFAULT 0, INDEX `contract_id` (`contract_id`), `contact_id` INT(11) DEFAULT 0, INDEX `contact_id` (`contact_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:19 - Info - 0.349s - query: CREATE TABLE `lnkcontracttodocument` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `contract_id` INT(11) DEFAULT 0, INDEX `contract_id` (`contract_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:20 - Info - 0.583s - query: CREATE TABLE `lnkfunctionalcitoprovidercontract` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `providercontract_id` INT(11) DEFAULT 0, INDEX `providercontract_id` (`providercontract_id`), `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:20 - Info - 0.284s - query: CREATE TABLE `servicefamily` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `icon_data` LONGBLOB, `icon_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `icon_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:21 - Info - 0.326s - query: CREATE TABLE `service` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `servicefamily_id` INT(11) DEFAULT 0, INDEX `servicefamily_id` (`servicefamily_id`), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `status` ENUM('implementation','obsolete','production') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `icon_data` LONGBLOB, `icon_mimetype` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `icon_filename` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:21 - Info - 0.441s - query: CREATE TABLE `lnkdocumenttoservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `document_id` INT(11) DEFAULT 0, INDEX `document_id` (`document_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:22 - Info - 0.322s - query: CREATE TABLE `lnkcontacttoservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `contact_id` INT(11) DEFAULT 0, INDEX `contact_id` (`contact_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:22 - Info - 0.461s - query: CREATE TABLE `servicesubcategory` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `request_type` ENUM('incident','service_request') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT 'incident', `status` ENUM('implementation','obsolete','production') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:22 - Info - 0.360s - query: CREATE TABLE `sla` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:23 - Info - 0.295s - query: CREATE TABLE `slt` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `priority` ENUM('1','2','3','4') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `request_type` ENUM('incident','service_request') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `metric` ENUM('tto','ttr') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, `value` INT(11), `unit` ENUM('hours','minutes') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:24 - Info - 1.037s - query: CREATE TABLE `lnkslatoslt` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `sla_id` INT(11) DEFAULT 0, INDEX `sla_id` (`sla_id`), `slt_id` INT(11) DEFAULT 0, INDEX `slt_id` (`slt_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:24 - Info - 0.615s - query: CREATE TABLE `lnkcustomercontracttoservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `customercontract_id` INT(11) DEFAULT 0, INDEX `customercontract_id` (`customercontract_id`), `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `sla_id` INT(11) DEFAULT 0, INDEX `sla_id` (`sla_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:25 - Info - 0.418s - query: CREATE TABLE `lnkprovidercontracttoservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `providercontract_id` INT(11) DEFAULT 0, INDEX `providercontract_id` (`providercontract_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:25 - Info - 0.349s - query: CREATE TABLE `lnkfunctionalcitoservice` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `service_id` INT(11) DEFAULT 0, INDEX `service_id` (`service_id`), `functionalci_id` INT(11) DEFAULT 0, INDEX `functionalci_id` (`functionalci_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:26 - Info - 0.350s - query: CREATE TABLE `deliverymodel` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `org_id` INT(11) DEFAULT 0, INDEX `org_id` (`org_id`), `description` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:26 - Info - 0.415s - query: CREATE TABLE `lnkdeliverymodeltocontact` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `deliverymodel_id` INT(11) DEFAULT 0, INDEX `deliverymodel_id` (`deliverymodel_id`), `contact_id` INT(11) DEFAULT 0, INDEX `contact_id` (`contact_id`), `role_id` INT(11) DEFAULT 0, INDEX `role_id` (`role_id`)) ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:26 - Info - 0.351s - query: CREATE TABLE `priv_urp_profiles` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '', INDEX `name` (`name` (95)), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:27 - Info - 0.419s - query: CREATE TABLE `priv_urp_userprofile` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `userid` INT(11) DEFAULT 0, INDEX `userid` (`userid`), `profileid` INT(11) DEFAULT 0, INDEX `profileid` (`profileid`), `description` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:27 - Info - 0.270s - query: CREATE TABLE `priv_urp_userorg` (`id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, `userid` INT(11) DEFAULT 0, INDEX `userid` (`userid`), `allowed_org_id` INT(11) DEFAULT 0, INDEX `allowed_org_id` (`allowed_org_id`), `reason` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT '') ENGINE = innodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci 
+2018-09-22 18:41:41 - Ok - Database structure successfully created.
+2018-09-22 18:41:42 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-22 18:41:42 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-22 18:41:42 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-22 18:41:42 - Info - operation 'async_action', peak memory usage. 71645704
+2018-09-22 18:41:42 - Info - After Database Creation
+2018-09-22 18:41:42 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 18:41:44 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-22 18:41:44 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-22 18:41:44 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-22 18:41:44 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, , 2.5.0)
+2018-09-22 18:41:44 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-22 18:41:47 - Info - CreateAdminAccount
+2018-09-22 18:41:50 - Info - Administrator account 'admin' created.
+2018-09-22 18:41:50 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, , 2.5.0)
+2018-09-22 18:41:50 - Info - operation 'async_action', peak memory usage. 61556984
+2018-09-22 18:41:51 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-22 18:41:53 - Info - starting data load session
+2018-09-22 18:41:53 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.organizations.xml
+2018-09-22 18:41:53 - Info - loading of data.sample.organizations.xml done.
+2018-09-22 18:41:53 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.brand.xml
+2018-09-22 18:41:54 - Info - loading of data.sample.brand.xml done.
+2018-09-22 18:41:54 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.model.xml
+2018-09-22 18:41:55 - Info - loading of data.sample.model.xml done.
+2018-09-22 18:41:55 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.osfamily.xml
+2018-09-22 18:41:55 - Info - loading of data.sample.osfamily.xml done.
+2018-09-22 18:41:55 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.osversion.xml
+2018-09-22 18:41:56 - Info - loading of data.sample.osversion.xml done.
+2018-09-22 18:41:56 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.networkdevicetype.xml
+2018-09-22 18:41:57 - Info - loading of data.sample.networkdevicetype.xml done.
+2018-09-22 18:41:57 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.contacttype.xml
+2018-09-22 18:41:58 - Info - loading of data.sample.contacttype.xml done.
+2018-09-22 18:41:58 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.locations.xml
+2018-09-22 18:41:59 - Info - loading of data.sample.locations.xml done.
+2018-09-22 18:41:59 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.persons.xml
+2018-09-22 18:42:08 - Info - loading of data.sample.persons.xml done.
+2018-09-22 18:42:08 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.teams.xml
+2018-09-22 18:42:10 - Info - loading of data.sample.teams.xml done.
+2018-09-22 18:42:10 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.contactteam.xml
+2018-09-22 18:42:16 - Info - loading of data.sample.contactteam.xml done.
+2018-09-22 18:42:16 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.servers.xml
+2018-09-22 18:42:21 - Info - loading of data.sample.servers.xml done.
+2018-09-22 18:42:21 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.nw-devices.xml
+2018-09-22 18:42:23 - Info - loading of data.sample.nw-devices.xml done.
+2018-09-22 18:42:23 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.software.xml
+2018-09-22 18:42:24 - Info - loading of data.sample.software.xml done.
+2018-09-22 18:42:24 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.dbserver.xml
+2018-09-22 18:42:26 - Info - loading of data.sample.dbserver.xml done.
+2018-09-22 18:42:26 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.dbschema.xml
+2018-09-22 18:42:27 - Info - loading of data.sample.dbschema.xml done.
+2018-09-22 18:42:27 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.webserver.xml
+2018-09-22 18:42:27 - Info - loading of data.sample.webserver.xml done.
+2018-09-22 18:42:28 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.webapp.xml
+2018-09-22 18:42:28 - Info - loading of data.sample.webapp.xml done.
+2018-09-22 18:42:28 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.applications.xml
+2018-09-22 18:42:30 - Info - loading of data.sample.applications.xml done.
+2018-09-22 18:42:30 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-config-mgmt/data.sample.applicationsolutionci.xml
+2018-09-22 18:42:32 - Info - loading of data.sample.applicationsolutionci.xml done.
+2018-09-22 18:42:32 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-datacenter-mgmt/data.sample.racks.xml
+2018-09-22 18:42:34 - Info - loading of data.sample.racks.xml done.
+2018-09-22 18:42:34 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.farm.xml
+2018-09-22 18:42:35 - Info - loading of data.sample.farm.xml done.
+2018-09-22 18:42:35 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.hypervisor.xml
+2018-09-22 18:42:37 - Info - loading of data.sample.hypervisor.xml done.
+2018-09-22 18:42:37 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.vm.xml
+2018-09-22 18:42:40 - Info - loading of data.sample.vm.xml done.
+2018-09-22 18:42:40 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.dbserver.xml
+2018-09-22 18:42:43 - Info - loading of data.sample.dbserver.xml done.
+2018-09-22 18:42:43 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.dbschema.xml
+2018-09-22 18:42:44 - Info - loading of data.sample.dbschema.xml done.
+2018-09-22 18:42:44 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.webserver.xml
+2018-09-22 18:42:45 - Info - loading of data.sample.webserver.xml done.
+2018-09-22 18:42:45 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.webapp.xml
+2018-09-22 18:42:47 - Info - loading of data.sample.webapp.xml done.
+2018-09-22 18:42:47 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-virtualization-mgmt/data.sample.applicationsolutionci.xml
+2018-09-22 18:42:51 - Info - loading of data.sample.applicationsolutionci.xml done.
+2018-09-22 18:42:51 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.organizations.xml
+2018-09-22 18:42:52 - Info - loading of data.sample.organizations.xml done.
+2018-09-22 18:42:52 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.contracts.xml
+2018-09-22 18:42:52 - Info - loading of data.sample.contracts.xml done.
+2018-09-22 18:42:52 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.servicefamilies.xml
+2018-09-22 18:42:52 - Info - loading of data.sample.servicefamilies.xml done.
+2018-09-22 18:42:52 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.services.xml
+2018-09-22 18:42:54 - Info - loading of data.sample.services.xml done.
+2018-09-22 18:42:54 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.serviceelements.xml
+2018-09-22 18:43:00 - Info - loading of data.sample.serviceelements.xml done.
+2018-09-22 18:43:00 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.sla.xml
+2018-09-22 18:43:01 - Info - loading of data.sample.sla.xml done.
+2018-09-22 18:43:01 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.slt.xml
+2018-09-22 18:43:01 - Info - loading of data.sample.slt.xml done.
+2018-09-22 18:43:01 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.sltsla.xml
+2018-09-22 18:43:02 - Info - loading of data.sample.sltsla.xml done.
+2018-09-22 18:43:02 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.contractservice.xml
+2018-09-22 18:43:05 - Info - loading of data.sample.contractservice.xml done.
+2018-09-22 18:43:05 - Info - Loading file: C:\wamp64\www\itop3/env-production/itop-service-mgmt/data.sample.deliverymodelcontact.xml
+2018-09-22 18:43:06 - Info - loading of data.sample.deliverymodelcontact.xml done.
+2018-09-22 18:43:06 - Info - ending data load session
+2018-09-22 18:43:06 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, , 2.5.0)
+2018-09-22 18:43:06 - Info - operation 'async_action', peak memory usage. 81581960
+2018-09-22 18:43:07 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 18:43:16 - Info - Created configuration directory: C:\wamp64\www\itop3/conf/
+2018-09-22 18:43:16 - Info - operation 'async_action', peak memory usage. 61036176
+2018-09-22 18:43:17 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 18:51:29 - Error - <b>Error:</b> the configuration file 'C:\wamp64\www\itop3/conf/production/config-itop.php' already exists and cannot be overwritten.
+2018-09-22 18:51:46 - Info - CheckPHPVersion
+2018-09-22 18:51:46 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-22 18:51:46 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-22 18:51:46 - Info - upload_max_filesize: 2M
+2018-09-22 18:51:46 - Info - post_max_size: 8M
+2018-09-22 18:51:46 - Info - max_file_uploads: 20
+2018-09-22 18:51:46 - Info - memory_limit is 134217728, ok.
+2018-09-22 18:51:46 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-22 18:51:46 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-22 18:51:46 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-22 18:51:46 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-22 18:51:46 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-22 18:51:46 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-22 18:51:48 - Info - CheckBackupPrerequisites
+2018-09-22 18:51:48 - Info - PHP functions disabled: 
+2018-09-22 18:51:48 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-22 18:51:48 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-22 18:51:49 - Info - operation 'async_action', peak memory usage. 14768192
+2018-09-22 18:51:52 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.5.0.3935
+2018-09-22 18:51:54 - Info - CheckGraphviz
+2018-09-22 18:51:54 - Info - PHP functions disabled: 
+2018-09-22 18:51:54 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-22 18:51:54 - Info - operation 'async_action', peak memory usage. 14759896
+2018-09-22 18:52:18 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file>C:\wamp64\www\itop3//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+    <item>sample-add-class-router</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+    <item>sample-add-class-router</item>
+  </selected_extensions>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-22 18:52:18 - Info - operation 'async_action', peak memory usage. 14794336
+2018-09-22 18:52:18 - Info - operation 'async_action', peak memory usage. 14772320
+2018-09-22 18:52:18 - Info - Compiling data model.
+2018-09-22 18:52:46 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-22 18:52:46 - Info - operation 'async_action', peak memory usage. 43705904
+2018-09-22 18:52:47 - Info - Update Database Schema for environment 'production'.
+2018-09-22 18:52:47 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 18:52:48 - Info - Renaming 'priv_internalUser' into 'priv_internaluser' (lowercase)
+2018-09-22 18:52:49 - Info - Cleanup of 'priv_change' to remove orphan records
+2018-09-22 18:52:49 - Info - There is a total of 3 records in priv_change.
+2018-09-22 18:52:49 - Info - There are 0 useless records in priv_change (0.00%)
+2018-09-22 18:52:49 - Info - Ok, nothing to cleanup.
+2018-09-22 18:52:50 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - No orphan attachment found.
+2018-09-22 18:52:50 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2018-09-22 18:52:50 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2018-09-22 18:52:50 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:52:50 - Info - Creating the structure in ''.
+2018-09-22 18:53:03 - Ok - Database structure successfully updated.
+2018-09-22 18:53:03 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'organization'...
+Ok, table 'organization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'group'...
+Ok, table 'group' successfully updated.
+
+2018-09-22 18:53:03 - Ok - Data sources checked: There are no Data Sources in the database.
+Ok.
+
+2018-09-22 18:53:03 - Ok - Meta enums rebuilt: Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_change`.`status` IN ('approved', 'assigned', 'new', 'planned') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_change`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_request`.`status` IN ('approved', 'assigned', 'escalated_tto', 'escalated_ttr', 'new', 'pending', 'waiting_for_approval') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_request`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'resolved' WHERE `ticket_request`.`status` IN ('resolved') AND `ticket`.`operational_status` != 'resolved'
+
+2018-09-22 18:53:03 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-22 18:53:03 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-22 18:53:03 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-22 18:53:03 - Info - operation 'async_action', peak memory usage. 79500608
+2018-09-22 18:53:03 - Info - After Database Creation
+2018-09-22 18:53:04 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 18:53:06 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-22 18:53:06 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-22 18:53:06 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-22 18:53:06 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-22 18:53:06 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:06 - Info - operation 'async_action', peak memory usage. 60870648
+2018-09-22 18:53:07 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-22 18:53:09 - Info - starting data load session
+2018-09-22 18:53:09 - Info - ending data load session
+2018-09-22 18:53:09 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 18:53:09 - Info - operation 'async_action', peak memory usage. 60553720
+2018-09-22 18:53:10 - Info - MetaModel::Startup from C:\wamp64\www\itop3//conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 18:53:17 - Info - operation 'async_action', peak memory usage. 61073976
+2018-09-22 18:53:18 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 19:52:03 - Error - <b>Error:</b> the configuration file 'C:\wamp64\www\itop3/conf/production/config-itop.php' already exists and cannot be overwritten.
+2018-09-22 19:52:31 - Info - CheckPHPVersion
+2018-09-22 19:52:31 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-22 19:52:31 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-22 19:52:31 - Info - upload_max_filesize: 2M
+2018-09-22 19:52:31 - Info - post_max_size: 8M
+2018-09-22 19:52:31 - Info - max_file_uploads: 20
+2018-09-22 19:52:31 - Info - memory_limit is 134217728, ok.
+2018-09-22 19:52:31 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-22 19:52:31 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-22 19:52:31 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-22 19:52:31 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-22 19:52:31 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-22 19:52:31 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-22 19:52:33 - Info - CheckBackupPrerequisites
+2018-09-22 19:52:33 - Info - PHP functions disabled: 
+2018-09-22 19:52:33 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-22 19:52:33 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-22 19:52:33 - Info - operation 'async_action', peak memory usage. 14768192
+2018-09-22 19:52:36 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.5.0.3935
+2018-09-22 19:52:39 - Info - CheckGraphviz
+2018-09-22 19:52:39 - Info - PHP functions disabled: 
+2018-09-22 19:52:39 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-22 19:52:39 - Info - operation 'async_action', peak memory usage. 14759896
+2018-09-22 19:53:13 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file>C:\wamp64\www\itop3//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+  </selected_extensions>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-22 19:53:13 - Info - operation 'async_action', peak memory usage. 14795304
+2018-09-22 19:53:13 - Info - operation 'async_action', peak memory usage. 14772696
+2018-09-22 19:53:13 - Info - Compiling data model.
+2018-09-22 19:53:46 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-22 19:53:46 - Info - operation 'async_action', peak memory usage. 43721584
+2018-09-22 19:53:46 - Info - Update Database Schema for environment 'production'.
+2018-09-22 19:53:47 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 19:53:49 - Info - Renaming 'priv_internalUser' into 'priv_internaluser' (lowercase)
+2018-09-22 19:53:49 - Info - Cleanup of 'priv_change' to remove orphan records
+2018-09-22 19:53:49 - Info - There is a total of 6 records in priv_change.
+2018-09-22 19:53:49 - Info - There are 2 useless records in priv_change (33.33%)
+2018-09-22 19:53:49 - Info - Removing the orphan records...
+2018-09-22 19:53:49 - Info - Cleanup completed successfully.
+2018-09-22 19:53:49 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - No orphan attachment found.
+2018-09-22 19:53:50 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2018-09-22 19:53:50 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2018-09-22 19:53:50 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:53:50 - Info - Creating the structure in ''.
+2018-09-22 19:54:05 - Ok - Database structure successfully updated.
+2018-09-22 19:54:06 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'organization'...
+Ok, table 'organization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'group'...
+Ok, table 'group' successfully updated.
+
+2018-09-22 19:54:06 - Ok - Data sources checked: There are no Data Sources in the database.
+Ok.
+
+2018-09-22 19:54:06 - Ok - Meta enums rebuilt: Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_change`.`status` IN ('approved', 'assigned', 'new', 'planned') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_change`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_request`.`status` IN ('approved', 'assigned', 'escalated_tto', 'escalated_ttr', 'new', 'pending', 'waiting_for_approval') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_request`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'resolved' WHERE `ticket_request`.`status` IN ('resolved') AND `ticket`.`operational_status` != 'resolved'
+
+2018-09-22 19:54:06 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-22 19:54:06 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-22 19:54:06 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-22 19:54:06 - Info - operation 'async_action', peak memory usage. 80148400
+2018-09-22 19:54:06 - Info - After Database Creation
+2018-09-22 19:54:07 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 19:54:09 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-22 19:54:09 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-22 19:54:09 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-22 19:54:09 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-22 19:54:09 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:09 - Info - operation 'async_action', peak memory usage. 61125264
+2018-09-22 19:54:10 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-22 19:54:12 - Info - starting data load session
+2018-09-22 19:54:12 - Info - ending data load session
+2018-09-22 19:54:12 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 19:54:12 - Info - operation 'async_action', peak memory usage. 60793696
+2018-09-22 19:54:13 - Info - MetaModel::Startup from C:\wamp64\www\itop3//conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 19:54:22 - Info - operation 'async_action', peak memory usage. 61324024
+2018-09-22 19:54:22 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 21:55:43 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/dictionaries/nl-nl.dict.php'
+2018-09-22 21:55:44 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/dictionaries/pt-br.dict.php'
+2018-09-22 21:55:44 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/dictionaries/ru-ru.dict.php'
+2018-09-22 21:55:44 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/dictionaries/tr-tr.dict.php'
+2018-09-22 21:55:44 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/dictionaries/zh-cn.dict.php'
+2018-09-22 21:55:45 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-attachments'
+2018-09-22 21:55:45 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-backup'
+2018-09-22 21:55:45 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-bridge-virtualization-storage'
+2018-09-22 21:55:45 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-change-mgmt'
+2018-09-22 21:55:45 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-config'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-config-mgmt'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-datacenter-mgmt'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-endusers-devices'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-hub-connector'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-portal'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-portal-base'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-profiles-itil'
+2018-09-22 21:55:46 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-request-mgmt'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-service-mgmt'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-sla-computation'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-storage-mgmt'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-tickets'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-virtualization-mgmt'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/itop-welcome-itil'
+2018-09-22 21:55:47 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/sample-add-class-router'
+2018-09-22 23:19:56 - Error - <b>Error:</b> the configuration file 'C:\wamp64\www\itop3/conf/production/config-itop.php' already exists and cannot be overwritten.
+2018-09-22 23:20:25 - Info - CheckPHPVersion
+2018-09-22 23:20:25 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-22 23:20:25 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-22 23:20:25 - Info - upload_max_filesize: 2M
+2018-09-22 23:20:25 - Info - post_max_size: 8M
+2018-09-22 23:20:25 - Info - max_file_uploads: 20
+2018-09-22 23:20:25 - Info - memory_limit is 134217728, ok.
+2018-09-22 23:20:25 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-22 23:20:25 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-22 23:20:25 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-22 23:20:25 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-22 23:20:25 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-22 23:20:25 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-22 23:20:27 - Info - CheckBackupPrerequisites
+2018-09-22 23:20:27 - Info - PHP functions disabled: 
+2018-09-22 23:20:27 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-22 23:20:27 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-22 23:20:28 - Info - operation 'async_action', peak memory usage. 14767200
+2018-09-22 23:20:30 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.5.0.3935
+2018-09-22 23:20:32 - Info - CheckGraphviz
+2018-09-22 23:20:32 - Info - PHP functions disabled: 
+2018-09-22 23:20:33 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-22 23:20:33 - Info - operation 'async_action', peak memory usage. 14758984
+2018-09-22 23:20:57 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file>C:\wamp64\www\itop3//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+  </selected_extensions>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-22 23:20:57 - Info - operation 'async_action', peak memory usage. 14795304
+2018-09-22 23:20:57 - Info - operation 'async_action', peak memory usage. 14772288
+2018-09-22 23:20:57 - Info - Compiling data model.
+2018-09-22 23:21:31 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-22 23:21:31 - Info - operation 'async_action', peak memory usage. 43735568
+2018-09-22 23:21:31 - Info - Update Database Schema for environment 'production'.
+2018-09-22 23:21:31 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 23:21:33 - Info - Renaming 'priv_internalUser' into 'priv_internaluser' (lowercase)
+2018-09-22 23:21:33 - Info - Cleanup of 'priv_change' to remove orphan records
+2018-09-22 23:21:33 - Info - There is a total of 8 records in priv_change.
+2018-09-22 23:21:33 - Info - There are 2 useless records in priv_change (25.00%)
+2018-09-22 23:21:33 - Info - Removing the orphan records...
+2018-09-22 23:21:34 - Info - Cleanup completed successfully.
+2018-09-22 23:21:34 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - No orphan attachment found.
+2018-09-22 23:21:34 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2018-09-22 23:21:34 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2018-09-22 23:21:34 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:34 - Info - Creating the structure in ''.
+2018-09-22 23:21:49 - Ok - Database structure successfully updated.
+2018-09-22 23:21:49 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'organization'...
+Ok, table 'organization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'group'...
+Ok, table 'group' successfully updated.
+
+2018-09-22 23:21:49 - Ok - Data sources checked: There are no Data Sources in the database.
+Ok.
+
+2018-09-22 23:21:49 - Ok - Meta enums rebuilt: Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_change`.`status` IN ('approved', 'assigned', 'new', 'planned') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_change`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_request`.`status` IN ('approved', 'assigned', 'escalated_tto', 'escalated_ttr', 'new', 'pending', 'waiting_for_approval') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_request`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'resolved' WHERE `ticket_request`.`status` IN ('resolved') AND `ticket`.`operational_status` != 'resolved'
+
+2018-09-22 23:21:49 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-22 23:21:49 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-22 23:21:49 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-22 23:21:49 - Info - operation 'async_action', peak memory usage. 80800400
+2018-09-22 23:21:50 - Info - After Database Creation
+2018-09-22 23:21:50 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-22 23:21:52 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-22 23:21:52 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-22 23:21:52 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-22 23:21:52 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:52 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-22 23:21:53 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:53 - Info - operation 'async_action', peak memory usage. 61374464
+2018-09-22 23:21:53 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-22 23:21:56 - Info - starting data load session
+2018-09-22 23:21:56 - Info - ending data load session
+2018-09-22 23:21:56 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-22 23:21:56 - Info - operation 'async_action', peak memory usage. 61042648
+2018-09-22 23:21:57 - Info - MetaModel::Startup from C:\wamp64\www\itop3//conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 23:22:05 - Info - operation 'async_action', peak memory usage. 61580240
+2018-09-22 23:22:06 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
+2018-09-22 23:31:58 - Warning - FAILED to remove file 'C:\wamp64\www\itop3/env-toolkit/authent-external/da.dict.authent-external.php'
+2018-09-23 10:00:44 - Info - iTop is configured to use PHP's <a style="background:transparent;padding:0;color:#000;text-decoration:underline;" href="http://www.php.net/manual/en/function.mail.php" target="_blank">mail</a> function to send emails.
+2018-09-23 10:00:44 - Warning - Your SMTP server is configured to 'localhost'. You might want to set or change the 'SMTP' directive into C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-23 10:00:44 - Info - Your SMTP port is configured to the default value: 25. You might want to set or change the 'smtp_port' directive into C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-23 10:00:44 - Ok - PHP settings are ok to proceed with a test of the email
+2018-09-23 10:42:58 - Info - CheckPHPVersion
+2018-09-23 10:42:58 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-23 10:42:58 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-23 10:42:58 - Info - upload_max_filesize: 2M
+2018-09-23 10:42:58 - Info - post_max_size: 8M
+2018-09-23 10:42:58 - Info - max_file_uploads: 20
+2018-09-23 10:42:58 - Info - memory_limit is 134217728, ok.
+2018-09-23 10:42:58 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-23 10:42:58 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-23 10:42:58 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-23 10:42:58 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-23 10:42:58 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-23 10:42:58 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-23 10:43:01 - Info - CheckBackupPrerequisites
+2018-09-23 10:43:01 - Info - PHP functions disabled: 
+2018-09-23 10:43:01 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-23 10:43:01 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-23 10:43:02 - Info - operation 'async_action', peak memory usage. 14767200
+2018-09-23 10:43:05 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.5.0.3935
+2018-09-23 10:43:07 - Info - CheckGraphviz
+2018-09-23 10:43:07 - Info - PHP functions disabled: 
+2018-09-23 10:43:07 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-23 10:43:07 - Info - operation 'async_action', peak memory usage. 14758984
+2018-09-23 10:43:42 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file>C:\wamp64\www\itop3//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+    <item>sample-delete-feilldUser</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+    <item>sample-delete-feilldUser</item>
+  </selected_extensions>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-23 10:43:42 - Info - operation 'async_action', peak memory usage. 14796576
+2018-09-23 10:43:42 - Info - operation 'async_action', peak memory usage. 14772816
+2018-09-23 10:43:43 - Info - Compiling data model.
+2018-09-23 10:44:23 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-23 10:44:24 - Info - operation 'async_action', peak memory usage. 43746928
+2018-09-23 10:44:24 - Info - Update Database Schema for environment 'production'.
+2018-09-23 10:44:25 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-23 10:44:26 - Info - Renaming 'priv_internalUser' into 'priv_internaluser' (lowercase)
+2018-09-23 10:44:27 - Info - Cleanup of 'priv_change' to remove orphan records
+2018-09-23 10:44:27 - Info - There is a total of 25 records in priv_change.
+2018-09-23 10:44:27 - Info - There are 2 useless records in priv_change (8.00%)
+2018-09-23 10:44:27 - Info - Removing the orphan records...
+2018-09-23 10:44:27 - Info - Cleanup completed successfully.
+2018-09-23 10:44:28 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:28 - Info - No orphan attachment found.
+2018-09-23 10:44:28 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2018-09-23 10:44:29 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2018-09-23 10:44:29 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:29 - Info - Creating the structure in ''.
+2018-09-23 10:44:46 - Ok - Database structure successfully updated.
+2018-09-23 10:44:46 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'organization'...
+Ok, table 'organization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'group'...
+Ok, table 'group' successfully updated.
+
+2018-09-23 10:44:46 - Ok - Data sources checked: There are no Data Sources in the database.
+Ok.
+
+2018-09-23 10:44:46 - Ok - Meta enums rebuilt: Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_change`.`status` IN ('approved', 'assigned', 'new', 'planned') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_change`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_request`.`status` IN ('approved', 'assigned', 'escalated_tto', 'escalated_ttr', 'new', 'pending', 'waiting_for_approval') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_request`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'resolved' WHERE `ticket_request`.`status` IN ('resolved') AND `ticket`.`operational_status` != 'resolved'
+
+2018-09-23 10:44:46 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-23 10:44:46 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-23 10:44:46 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-23 10:44:46 - Info - operation 'async_action', peak memory usage. 80738504
+2018-09-23 10:44:47 - Info - After Database Creation
+2018-09-23 10:44:47 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-23 10:44:50 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-23 10:44:50 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-23 10:44:50 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-23 10:44:50 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-23 10:44:50 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:50 - Info - operation 'async_action', peak memory usage. 61374424
+2018-09-23 10:44:51 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-23 10:44:53 - Info - starting data load session
+2018-09-23 10:44:53 - Info - ending data load session
+2018-09-23 10:44:53 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 10:44:53 - Info - operation 'async_action', peak memory usage. 61042816
+2018-09-23 10:44:54 - Info - MetaModel::Startup from C:\wamp64\www\itop3//conf/production/config-itop.php (ModelOnly = 1)
+2018-09-23 10:45:03 - Info - operation 'async_action', peak memory usage. 61578232
+2018-09-23 10:45:04 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
+2018-09-23 11:28:50 - Error - <b>Error:</b> the configuration file 'C:\wamp64\www\itop3/conf/production/config-itop.php' already exists and cannot be overwritten.
+2018-09-23 11:29:08 - Info - CheckPHPVersion
+2018-09-23 11:29:08 - Info - php.ini file(s): 'C:\wamp64\bin\apache\apache2.4.27\bin\php.ini'
+2018-09-23 11:29:08 - Info - Temporary directory for files upload (c:/wamp64/tmp) is writable.
+2018-09-23 11:29:08 - Info - upload_max_filesize: 2M
+2018-09-23 11:29:08 - Info - post_max_size: 8M
+2018-09-23 11:29:08 - Info - max_file_uploads: 20
+2018-09-23 11:29:08 - Info - memory_limit is 134217728, ok.
+2018-09-23 11:29:08 - Info - session.save_path is: 'c:/wamp64/tmp'.
+2018-09-23 11:29:08 - Ok - The current PHP Version (5.6.31) is greater than the minimum version required to run iTop, which is (5.6.0)
+2018-09-23 11:29:08 - Ok - Required PHP extension(s): dom, hash, iconv, json, mysqli, pcre, session, simplexml, soap, zip, zlib.
+2018-09-23 11:29:08 - Ok - Optional PHP extension(s): gd, ldap, mcrypt.
+2018-09-23 11:29:08 - Ok - Loaded php.ini files: C:\wamp64\bin\apache\apache2.4.27\bin\php.ini
+2018-09-23 11:29:08 - Ok - The value for session.save_path (c:/wamp64/tmp) is writable for the web server.
+2018-09-23 11:29:10 - Info - CheckBackupPrerequisites
+2018-09-23 11:29:10 - Info - PHP functions disabled: 
+2018-09-23 11:29:11 - Info - mysqldump -V said: 'mysqldump' n'est pas reconnu en tant que commande interne
+2018-09-23 11:29:11 - Info - mysqldump -V said: ou externe, un programme ex‚cutable ou un fichier de commandes.
+2018-09-23 11:29:11 - Info - operation 'async_action', peak memory usage. 14767200
+2018-09-23 11:29:14 - Info - GetApplicationVersion returns: product_name: iTop, product_version: 2.5.0.3935
+2018-09-23 11:29:17 - Info - CheckGraphviz
+2018-09-23 11:29:17 - Info - PHP functions disabled: 
+2018-09-23 11:29:17 - Info - C:\Program Files\Graphviz\bin\dot.exe -V said: Le chemin d'accŠs sp‚cifi‚ est introuvable.
+2018-09-23 11:29:17 - Info - operation 'async_action', peak memory usage. 14758984
+2018-09-23 11:37:58 - Info - ======= Installation starts =======
+Parameters:
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+  <mode>upgrade</mode>
+  <preinstall>
+    <copies type="array"/>
+  </preinstall>
+  <source_dir>datamodels/2.x/</source_dir>
+  <datamodel_version>2.5.0</datamodel_version>
+  <previous_configuration_file>C:\wamp64\www\itop3//conf/production/config-itop.php</previous_configuration_file>
+  <extensions_dir>extensions</extensions_dir>
+  <target_env>production</target_env>
+  <workspace_dir></workspace_dir>
+  <database>
+    <server>localhost</server>
+    <user>root</user>
+    <pwd>**removed**</pwd>
+    <name>itop3</name>
+    <db_tls_enabled></db_tls_enabled>
+    <db_tls_ca></db_tls_ca>
+    <prefix></prefix>
+  </database>
+  <url>http://localhost/itop3/</url>
+  <graphviz_path>C:\Program Files\Graphviz\bin\dot.exe</graphviz_path>
+  <admin_account>
+    <user></user>
+    <pwd>**removed**</pwd>
+    <language></language>
+  </admin_account>
+  <language></language>
+  <selected_modules type="array">
+    <item>authent-external</item>
+    <item>authent-ldap</item>
+    <item>authent-local</item>
+    <item>itop-backup</item>
+    <item>itop-config</item>
+    <item>itop-profiles-itil</item>
+    <item>itop-sla-computation</item>
+    <item>itop-tickets</item>
+    <item>itop-welcome-itil</item>
+    <item>itop-config-mgmt</item>
+    <item>itop-attachments</item>
+    <item>itop-hub-connector</item>
+    <item>itop-datacenter-mgmt</item>
+    <item>itop-endusers-devices</item>
+    <item>itop-storage-mgmt</item>
+    <item>itop-virtualization-mgmt</item>
+    <item>itop-bridge-virtualization-storage</item>
+    <item>itop-service-mgmt</item>
+    <item>itop-request-mgmt</item>
+    <item>itop-portal</item>
+    <item>itop-portal-base</item>
+    <item>itop-change-mgmt</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+    <item>sample-delete-feilldUser</item>
+  </selected_modules>
+  <selected_extensions type="array">
+    <item>itop-config-mgmt-core</item>
+    <item>itop-config-mgmt-datacenter</item>
+    <item>itop-config-mgmt-end-user</item>
+    <item>itop-config-mgmt-storage</item>
+    <item>itop-config-mgmt-virtualization</item>
+    <item>itop-service-mgmt-enterprise</item>
+    <item>itop-ticket-mgmt-simple-ticket</item>
+    <item>itop-ticket-mgmt-simple-ticket-enhanced-portal</item>
+    <item>itop-change-mgmt-simple</item>
+    <item>sample-add-class-router</item>
+    <item>sample-add-class-switch</item>
+    <item>sample-delete-attribute</item>
+    <item>sample-delete-feilldUser</item>
+  </selected_extensions>
+  <sample_data></sample_data>
+  <old_addon></old_addon>
+  <options type="array"/>
+  <mysql_bindir></mysql_bindir>
+</installation>
+
+
+2018-09-23 11:37:58 - Info - operation 'async_action', peak memory usage. 14797128
+2018-09-23 11:37:58 - Info - operation 'async_action', peak memory usage. 14773368
+2018-09-23 11:37:58 - Info - Compiling data model.
+2018-09-23 11:38:39 - Info - Data model successfully compiled to 'C:\wamp64\www\itop3/env-production'.
+2018-09-23 11:38:39 - Info - operation 'async_action', peak memory usage. 43743920
+2018-09-23 11:38:39 - Info - Update Database Schema for environment 'production'.
+2018-09-23 11:38:40 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-23 11:38:41 - Info - Renaming 'priv_internalUser' into 'priv_internaluser' (lowercase)
+2018-09-23 11:38:42 - Info - Cleanup of 'priv_change' to remove orphan records
+2018-09-23 11:38:42 - Info - There is a total of 26 records in priv_change.
+2018-09-23 11:38:42 - Info - There are 2 useless records in priv_change (7.69%)
+2018-09-23 11:38:42 - Info - Removing the orphan records...
+2018-09-23 11:38:42 - Info - Cleanup completed successfully.
+2018-09-23 11:38:43 - Info - Calling Module Handler: AttachmentInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - No orphan attachment found.
+2018-09-23 11:38:44 - Info - Calling Module Handler: ConfigMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'DBserver' to 'DBServer': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'OSfamily' to 'OSFamily': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'OSversion' to 'OSVersion': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'Webserver' to 'WebServer': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'OSpatch' to 'OSPatch': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'OsLicence' to 'OSLicence': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'IOSversion' to 'IOSVersion': 0 rows affected
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'IPinterface' to 'IPInterface': 0 rows affected
+2018-09-23 11:38:44 - Info - Calling Module Handler: EndUserMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Renaming class in DB - final class from 'IpPhone' to 'IPPhone': 0 rows affected
+2018-09-23 11:38:44 - Info - Calling Module Handler: StorageMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Calling Module Handler: TicketsInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Calling Module Handler: ChangeManagementInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Calling Module Handler: ServiceMgmtInstaller::BeforeDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:38:44 - Info - Creating the structure in ''.
+2018-09-23 11:39:07 - Ok - Database structure successfully updated.
+2018-09-23 11:39:07 - Ok - Hierchical keys rebuilt: The attribute parent_id from Organization is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'organization'...
+Ok, table 'organization' successfully updated.
+The attribute parent_id from Group is a hierarchical key.
+Rebuilding the fields parent_id_right and parent_id_left from table 'group'...
+Ok, table 'group' successfully updated.
+
+2018-09-23 11:39:07 - Ok - Data sources checked: There are no Data Sources in the database.
+Ok.
+
+2018-09-23 11:39:07 - Ok - Meta enums rebuilt: Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_change`.`status` IN ('approved', 'assigned', 'new', 'planned') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_change` ON `ticket_change`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_change`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'ongoing' WHERE `ticket_request`.`status` IN ('approved', 'assigned', 'escalated_tto', 'escalated_ttr', 'new', 'pending', 'waiting_for_approval') AND `ticket`.`operational_status` != 'ongoing'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'closed' WHERE `ticket_request`.`status` IN ('closed', 'rejected') AND `ticket`.`operational_status` != 'closed'
+Executing query: UPDATE `ticket` JOIN `ticket_request` ON `ticket_request`.id = `ticket`.id SET `ticket`.`operational_status` = 'resolved' WHERE `ticket_request`.`status` IN ('resolved') AND `ticket`.`operational_status` != 'resolved'
+
+2018-09-23 11:39:07 - Info - 'priv_change.origin' already initialized, nothing to do.
+2018-09-23 11:39:08 - Info - 'priv_async_task.status' already initialized, nothing to do.
+2018-09-23 11:39:08 - Info - Database Schema Successfully Updated for environment 'production'.
+2018-09-23 11:39:08 - Info - operation 'async_action', peak memory usage. 80740008
+2018-09-23 11:39:08 - Info - After Database Creation
+2018-09-23 11:39:08 - Info - MetaModel::Startup (ModelOnly = 1)
+2018-09-23 11:39:10 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:10 - Info - Initializing attachment/item_org_id - null to zero
+2018-09-23 11:39:10 - Info - Initializing attachment/item_org_id - zero to the container
+2018-09-23 11:39:11 - Info - Initializing attachment/item_org_id - 0 records have been adjusted
+2018-09-23 11:39:11 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseCreation(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - URP_Profiles::GetPredefinedObjects() returned 13 elements.
+2018-09-23 11:39:11 - Info - Calling Module Handler: AttachmentInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: TicketsInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDatabaseSetup(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:11 - Info - operation 'async_action', peak memory usage. 61377464
+2018-09-23 11:39:12 - Info - MetaModel::Startup (ModelOnly = )
+2018-09-23 11:39:14 - Info - starting data load session
+2018-09-23 11:39:14 - Info - ending data load session
+2018-09-23 11:39:14 - Info - Calling Module Handler: AttachmentInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:14 - Info - Calling Module Handler: ConfigMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:14 - Info - Calling Module Handler: EndUserMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:14 - Info - Calling Module Handler: StorageMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:14 - Info - Calling Module Handler: TicketsInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:15 - Info - Calling Module Handler: ChangeManagementInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:15 - Info - Calling Module Handler: ServiceMgmtInstaller::AfterDataLoad(oConfig, 2.5.0, 2.5.0)
+2018-09-23 11:39:15 - Info - operation 'async_action', peak memory usage. 61040672
+2018-09-23 11:39:15 - Info - MetaModel::Startup from C:\wamp64\www\itop3//conf/production/config-itop.php (ModelOnly = 1)
+2018-09-23 11:39:29 - Info - operation 'async_action', peak memory usage. 61578944
+2018-09-23 11:39:30 - Info - MetaModel::Startup from C:\wamp64\www\itop3/conf/production/config-itop.php (ModelOnly = 1)
